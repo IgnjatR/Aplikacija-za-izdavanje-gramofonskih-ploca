@@ -44,8 +44,12 @@ public class Kontroler {
 		return idPoslednjegUnetogZaduzenja;
 	}
 
+	public void setIdPoslednjegUnetogZaduzenja(int idPoslednjegUnetogZaduzenja) {
+		this.idPoslednjegUnetogZaduzenja = idPoslednjegUnetogZaduzenja;
+	}
+
 	private Kontroler() {
-		icon = new ImageIcon("src/images/success.png");
+		icon = new ImageIcon("src/main/java/rs/ac/bg/fon/nprog/projekat/images/success.png");
 
 	}
 
@@ -355,58 +359,56 @@ public class Kontroler {
 
 		}
 
-	return null;
+		return null;
 
 	}
 
 	public void izbrisiZaduzenje(KlijentskiZahtev kz) {
-		ServerskiOdgovor so=null;
+		ServerskiOdgovor so = null;
 		if (kz.getOperacija() == Operacije.IZBRISI_ZADUZENJE) {
 
-            SOBrisanjeZaduzenja zaduzenje = new SOBrisanjeZaduzenja();
-            so=zaduzenje.izbrisiZaduzenje(kz);
+			SOBrisanjeZaduzenja zaduzenje = new SOBrisanjeZaduzenja();
+			so = zaduzenje.izbrisiZaduzenje(kz);
 
-        }
-			if (so.getOperacija() == Operacije.IZBRISI_ZADUZENJE) {
-				System.out.println("ovdeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+		}
+		if (so.getOperacija() == Operacije.IZBRISI_ZADUZENJE) {
+			System.out.println("ovdeeeeeeeeeeeeeeeeeeeeeeeeeeee");
 
-				if (so.isUspesno_neuspesno() == true) {
-					JOptionPane.showMessageDialog(loginForma, "Uspesno izbrisano zaduzenje", "Uspeh",
-							JOptionPane.INFORMATION_MESSAGE, icon);
-				} else {
-					JOptionPane.showMessageDialog(loginForma, "Neuspesno izbrisano zaduzenje", "Greska",
-							JOptionPane.ERROR_MESSAGE);
-				}
-
+			if (so.isUspesno_neuspesno() == true) {
+				JOptionPane.showMessageDialog(loginForma, "Uspesno izbrisano zaduzenje", "Uspeh",
+						JOptionPane.INFORMATION_MESSAGE, icon);
+			} else {
+				JOptionPane.showMessageDialog(loginForma, "Neuspesno izbrisano zaduzenje", "Greska",
+						JOptionPane.ERROR_MESSAGE);
 			}
 
-		
+		}
+
 	}
 
 	public void izmeniZaduzenja(KlijentskiZahtev kz) {
-		
-		ServerskiOdgovor so=null;
+
+		ServerskiOdgovor so = null;
 		if (kz.getOperacija() == Operacije.IZMENI_ZADUZENJA) {
 
-            SOIzmenaPodatakaOZaduzenju zaduzenja = new SOIzmenaPodatakaOZaduzenju();
-            so=zaduzenja.izmeniZaduzenja(kz);
+			SOIzmenaPodatakaOZaduzenju zaduzenja = new SOIzmenaPodatakaOZaduzenju();
+			so = zaduzenja.izmeniZaduzenja(kz);
 
-        }
+		}
 
-			if (so.getOperacija() == Operacije.IZMENI_ZADUZENJA) {
-				System.out.println("ovdeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+		if (so.getOperacija() == Operacije.IZMENI_ZADUZENJA) {
+			System.out.println("ovdeeeeeeeeeeeeeeeeeeeeeeeeeeee");
 
-				if (so.isUspesno_neuspesno() == true) {
-					JOptionPane.showMessageDialog(loginForma, "Uspesno izmenjena ploca", "Uspeh",
-							JOptionPane.INFORMATION_MESSAGE, icon);
-				} else {
-					JOptionPane.showMessageDialog(loginForma, "Neuspesno izmenjena ploca", "Greska",
-							JOptionPane.ERROR_MESSAGE);
-				}
-
+			if (so.isUspesno_neuspesno() == true) {
+				JOptionPane.showMessageDialog(loginForma, "Uspesno izmenjena ploca", "Uspeh",
+						JOptionPane.INFORMATION_MESSAGE, icon);
+			} else {
+				JOptionPane.showMessageDialog(loginForma, "Neuspesno izmenjena ploca", "Greska",
+						JOptionPane.ERROR_MESSAGE);
 			}
 
-		
+		}
+
 	}
 
 	public Nalog getPrijavljeniZaposleni() {
@@ -417,8 +419,27 @@ public class Kontroler {
 		this.prijavljeniZaposleni = prijavljeniZaposleni;
 	}
 
-	public void setIdPoslednjegUnetogZaduzenja(int int1) {
-		// TODO Auto-generated method stub
+	public void ploceUJSON() {
+
+		SOPloceUJSON json = new SOPloceUJSON();
+		if (json.prebaciPloceUJSON())
+			JOptionPane.showMessageDialog(loginForma, "Uspesno serijalizpvane ploce u JSON format", "Uspeh",
+					JOptionPane.INFORMATION_MESSAGE, icon);
+		else
+			JOptionPane.showMessageDialog(loginForma, "Neuspesno serijalizpvane ploce u JSON format", "Greska",
+					JOptionPane.ERROR_MESSAGE);
+
+	}
+
+	public void JSONUPloce() {
+
+		SOJSONUPloce json = new SOJSONUPloce();
+		if (json.prebaciJSONUPloce())
+			JOptionPane.showMessageDialog(loginForma, "Uspesno serijalizpvane ploce u JSON format", "Uspeh",
+					JOptionPane.INFORMATION_MESSAGE, icon);
+		else
+			JOptionPane.showMessageDialog(loginForma, "Neuspesno serijalizpvane ploce u JSON format", "Greska",
+					JOptionPane.ERROR_MESSAGE);
 
 	}
 
