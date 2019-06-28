@@ -136,6 +136,7 @@ public class StavkaZaduzenjaTest {
 		assertTrue(s.equals(s2));
 	}
 
+	@Test
 	public void testEqualsObjectTrue2() {
 		Ploca p = new Ploca();
 		p.setIdPloce(1);
@@ -176,6 +177,8 @@ public class StavkaZaduzenjaTest {
 
 		assertTrue(s.equals(s2));
 	}
+
+	@Test
 
 	public void testEqualsObjectTrue3() {
 		Ploca p = new Ploca();
@@ -218,6 +221,8 @@ public class StavkaZaduzenjaTest {
 		assertTrue(s.equals(s2));
 	}
 
+	@Test
+
 	public void testEqualsObjectTrue4() {
 		Ploca p = new Ploca();
 		p.setIdPloce(1);
@@ -258,6 +263,8 @@ public class StavkaZaduzenjaTest {
 
 		assertTrue(s.equals(s2));
 	}
+
+	@Test
 
 	public void testEqualsObjectTrue5() {
 		Ploca p = new Ploca();
@@ -300,6 +307,8 @@ public class StavkaZaduzenjaTest {
 		assertTrue(s.equals(s2));
 	}
 
+	@Test
+
 	public void testEqualsObjectFalse() {
 		Ploca p = new Ploca();
 		p.setIdPloce(1);
@@ -341,6 +350,8 @@ public class StavkaZaduzenjaTest {
 		assertFalse(s.equals(s2));
 	}
 
+	@Test
+
 	public void testEqualsObjectFalse2() {
 		Ploca p = new Ploca();
 		p.setIdPloce(1);
@@ -381,6 +392,8 @@ public class StavkaZaduzenjaTest {
 
 		assertFalse(s.equals(s2));
 	}
+
+	@Test
 
 	public void testEqualsObjectFalse3() {
 		Ploca p = new Ploca();

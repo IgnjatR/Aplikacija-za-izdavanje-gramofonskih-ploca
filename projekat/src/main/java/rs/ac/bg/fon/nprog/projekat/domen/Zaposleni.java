@@ -36,6 +36,8 @@ public class Zaposleni  {
     }
 
     public void setIdZaposlenog(int idZaposlenog) {
+    	if(idZaposlenog<0)
+    		throw new RuntimeException();
         this.idZaposlenog = idZaposlenog;
     }
 
