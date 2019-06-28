@@ -101,7 +101,7 @@ public class Zaduzenje {
 
     @Override
     public String toString() {
-        return  datum + ": " + zaposleni + " " + klijent +" "+ukupno.setScale(2, RoundingMode.CEILING);
+        return  zaposleni + " " + klijent +" "+ukupno.setScale(2, RoundingMode.CEILING);
     }
     
     

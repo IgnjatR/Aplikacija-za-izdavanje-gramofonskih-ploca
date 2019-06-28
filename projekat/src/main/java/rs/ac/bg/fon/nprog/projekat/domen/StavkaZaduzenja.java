@@ -75,6 +75,8 @@ public class StavkaZaduzenja  {
     }
 
     public void setRedniBroj(int redniBroj) {
+    	if(redniBroj<0)
+    		throw new RuntimeException();
         this.redniBroj = redniBroj;
     }
 
@@ -96,7 +98,7 @@ public class StavkaZaduzenja  {
 
     @Override
     public String toString() {
-        return "StavkaZaduzenja{" + "zaduzenje=" + zaduzenje + ", zaposleni=" + zaposleni + ", klijent=" + klijent + ", redniBroj=" + redniBroj + ", kolicina=" + kolicina + ", vrednost=" + vrednost + ", ploca=" + ploca + '}';
+        return "Sifra zaduzenje=" + zaduzenje.getSifraZaduzenja() + ", kolicina=" + kolicina + ", vrednost=" + vrednost + ", ploca=" + ploca ;
     }
 
     @Override
