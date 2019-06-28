@@ -38,6 +38,8 @@ public class Nalog {
     }
 
     public void setSifraNaloga(int sifraNaloga) {
+    	if(sifraNaloga<0)
+    		throw new RuntimeException("Sifra naloga mora biti veca od 0");
         this.sifraNaloga = sifraNaloga;
     }
 
@@ -90,6 +92,9 @@ public class Nalog {
         this.password = password;
         this.username = username;
     }
+
+	public Nalog() {
+	}
     
     
 }

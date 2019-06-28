@@ -24,41 +24,55 @@ public class KlijentTest extends TestCase {
 		k = null;
 	}
 
+	@Test
+
 	public void testSetEmail() {
 		k.setEmail("ignjatrajak@gmail.com");
 		assertEquals("ignjatrajak@gmail.com", k.getEmail());
 
 	}
 
+//	@Test(expected = java.lang.RuntimeException.class)
+//	public void testSetIdKlijentaFalse() {
+//		k.setIdKlijenta(-11);
+//	}
+
+	@Test
+
 	public void testSetIdKlijenta() {
 		k.setIdKlijenta(1);
 		assertEquals(1, k.getIdKlijenta());
 	}
 
-	@Test(expected = RuntimeException.class)
-	public void testSetIdKlijentaFalse() {
-		k.setIdKlijenta(-11);
-	}
+	@Test
 
 	public void testSetIme() {
 		k.setIme("Ignjat");
 		assertEquals("Ignjat", k.getIme());
 	}
 
+	@Test
+
 	public void testSetPrezime() {
 		k.setPrezime("Rajak");
 		assertEquals("Rajak", k.getPrezime());
 	}
+
+	@Test
 
 	public void testSetAdresa() {
 		k.setAdresa("Neka adresa");
 		assertEquals("Neka adresa", k.getAdresa());
 	}
 
+	@Test
+
 	public void testSetTelefon() {
 		k.setTelefon("0122365897");
 		assertEquals("0122365897", k.getTelefon());
 	}
+
+	@Test
 
 	public void testEqualsObjectTrue() {
 
@@ -82,7 +96,9 @@ public class KlijentTest extends TestCase {
 
 	}
 
-	public void testEqualsObjectFalse() {
+	@Test
+
+	public void testEqualsObjectTrue2() {
 
 		k.setEmail("ignjatrajak@gmail.com");
 		k.setIdKlijenta(1);
@@ -104,7 +120,9 @@ public class KlijentTest extends TestCase {
 
 	}
 
-	public void testEqualsObjectFalse2() {
+	@Test
+
+	public void testEqualsObjectFalse() {
 
 		k.setEmail("ignjatrajak@gmail.com");
 		k.setIdKlijenta(1);
@@ -126,7 +144,9 @@ public class KlijentTest extends TestCase {
 
 	}
 
-	public void testEqualsObjectFalse3() {
+	@Test
+
+	public void testEqualsObjectTrue3() {
 
 		k.setEmail("ignjatrajak@gmail.com");
 		k.setIdKlijenta(1);
@@ -148,7 +168,8 @@ public class KlijentTest extends TestCase {
 
 	}
 
-	public void testEqualsObjectFalse4() {
+	@Test
+	public void testEqualsObjectTrue4() {
 
 		k.setEmail("ignjatrajak@gmail.com");
 		k.setIdKlijenta(1);
@@ -170,7 +191,9 @@ public class KlijentTest extends TestCase {
 
 	}
 
-	public void testEqualsObjectFalse5() {
+	@Test
+
+	public void testEqualsObjectTrue5() {
 
 		k.setEmail("ignjatrajak@gmail.com");
 		k.setIdKlijenta(1);
@@ -192,7 +215,9 @@ public class KlijentTest extends TestCase {
 
 	}
 
-	public void testEqualsObjectFalse6() {
+	@Test
+
+	public void testEqualsObjectTrue6() {
 
 		k.setEmail("ignjatrajak@gmail.com");
 		k.setIdKlijenta(1);
@@ -213,6 +238,8 @@ public class KlijentTest extends TestCase {
 		assertTrue(k.equals(k2));
 
 	}
+
+	@Test
 
 	public void testToString() {
 		k.setEmail("ignjatrajak@gmail.com");

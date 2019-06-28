@@ -28,7 +28,10 @@ public class Zaposleni  {
         this.emailZ = emailZ;
     }
 
-    public int getIdZaposlenog() {
+    public Zaposleni() {
+	}
+
+	public int getIdZaposlenog() {
         return idZaposlenog;
     }
 

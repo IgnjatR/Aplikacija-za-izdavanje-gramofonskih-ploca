@@ -61,7 +61,6 @@ public class Klijent {
 	}
 
 	public Klijent() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getEmail() {
@@ -76,9 +75,9 @@ public class Klijent {
 		return idKlijenta;
 	}
 
-	public void setIdKlijenta(int idKlijenta) {
-		if (idKlijenta<0)
-			throw new RuntimeException("Id mora biti veci od 0");
+	public void setIdKlijenta(int idKlijenta) throws RuntimeException{
+		if(idKlijenta<0)
+    		throw new RuntimeException("ID klijenta mora biti veci od 0");
 		this.idKlijenta = idKlijenta;
 	}
 
