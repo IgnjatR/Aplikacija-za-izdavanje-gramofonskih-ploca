@@ -48,6 +48,8 @@ public class Zaduzenje {
     }
 
     public void setSifraZaduzenja(int sifraZaduzenja) {
+    	if(sifraZaduzenja<0)
+    		throw new RuntimeException();
         this.sifraZaduzenja = sifraZaduzenja;
     }
 
