@@ -48,6 +48,8 @@ public class Ploca {
     }
 
     public void setIdPloce(int idPloce) {
+    	if(idPloce<0)
+    		throw new RuntimeException();
         this.idPloce = idPloce;
     }
 
