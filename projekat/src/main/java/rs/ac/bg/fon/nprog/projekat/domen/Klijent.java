@@ -7,109 +7,140 @@ package rs.ac.bg.fon.nprog.projekat.domen;
 
 import java.io.Serializable;
 
+import javax.management.RuntimeErrorException;
+
 /**
+ * Klasa koja predstavlja klijenta radnje.
+ * 
+ * @author Ignjat Rajak
+ * @version 1.0
  *
- * @author Ignjat
  */
-public class Klijent  {
-    
-    
-    private int idKlijenta;
-    private String ime;
-    private String prezime;
-    private String telefon;
-    private String adresa;
-    private String email;
+public class Klijent {
 
-    public Klijent(int idKlijenta, String ime, String prezime, String telefon, String adresa, String email) {
-        this.idKlijenta = idKlijenta;
-        this.ime = ime;
-        this.prezime = prezime;
-        this.telefon = telefon;
-        this.adresa = adresa;
-        this.email = email;
-    }
+	/**
+	 * ID klijenta kao int.
+	 */
+	private int idKlijenta;
+	
+	/**
+	 * Ime klijenta kao String.
+	 */
+	private String ime;
+	
+	/**
+	 * Prezime klijenta kao String.
+	 */
+	private String prezime;
+	
+	/**
+	 * Telefon klijenta kao String.
+	 */
+	private String telefon;
+	
+	/**
+	 * Adresa kao String.
+	 */
+	private String adresa;
+	
+	/**
+	 * Email klijenta kao String.
+	 */
+	private String email;
+	
 
-    public String getEmail() {
-        return email;
-    }
+	
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public Klijent(int idKlijenta, String ime, String prezime, String telefon, String adresa, String email) {
+		this.idKlijenta = idKlijenta;
+		this.ime = ime;
+		this.prezime = prezime;
+		this.telefon = telefon;
+		this.adresa = adresa;
+		this.email = email;
+	}
 
-    public int getIdKlijenta() {
-        return idKlijenta;
-    }
+	public Klijent() {
+		// TODO Auto-generated constructor stub
+	}
 
-    public void setIdKlijenta(int idKlijenta) {
-        this.idKlijenta = idKlijenta;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public String getIme() {
-        return ime;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public void setIme(String ime) {
-        this.ime = ime;
-    }
+	public int getIdKlijenta() {
+		return idKlijenta;
+	}
 
-    public String getPrezime() {
-        return prezime;
-    }
+	public void setIdKlijenta(int idKlijenta) {
+		if (idKlijenta<0)
+			throw new RuntimeException("Id mora biti veci od 0");
+		this.idKlijenta = idKlijenta;
+	}
 
-    public void setPrezime(String prezime) {
-        this.prezime = prezime;
-    }
+	public String getIme() {
+		return ime;
+	}
 
-    public String getTelefon() {
-        return telefon;
-    }
+	public void setIme(String ime) {
+		this.ime = ime;
+	}
 
-    public void setTelefon(String telefon) {
-        this.telefon = telefon;
-    }
+	public String getPrezime() {
+		return prezime;
+	}
 
-    public String getAdresa() {
-        return adresa;
-    }
+	public void setPrezime(String prezime) {
+		this.prezime = prezime;
+	}
 
-    public void setAdresa(String adresa) {
-        this.adresa = adresa;
-    }
+	public String getTelefon() {
+		return telefon;
+	}
 
-    @Override
-    public int hashCode() {
-        int hash = 7;
-        return hash;
-    }
+	public void setTelefon(String telefon) {
+		this.telefon = telefon;
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Klijent other = (Klijent) obj;
-        if (this.idKlijenta != other.idKlijenta) {
-            return false;
-        }
-        return true;
-    }
+	public String getAdresa() {
+		return adresa;
+	}
 
-    @Override
-    public String toString() {
-        return ime + " "+ prezime ;
-    }
-    
-    
-    
-    
-    
-    
+	public void setAdresa(String adresa) {
+		this.adresa = adresa;
+	}
+
+	@Override
+	public int hashCode() {
+		int hash = 7;
+		return hash;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		final Klijent other = (Klijent) obj;
+		if (this.idKlijenta != other.idKlijenta) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return ime + " " + prezime;
+	}
+
 }
