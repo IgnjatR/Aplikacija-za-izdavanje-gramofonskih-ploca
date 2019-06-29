@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package rs.ac.bg.fon.nprog.projekat.domen;
 
 import java.io.Serializable;
@@ -11,8 +6,11 @@ import java.math.RoundingMode;
 import java.util.Date;
 
 /**
+ * Klasa koja predstavlja zaduzenje klijenta.
+ * 
+ * @author Ignjat Rajak
+ * @version 1.0
  *
- * @author Ignjat
  */
 public class Zaduzenje {
 

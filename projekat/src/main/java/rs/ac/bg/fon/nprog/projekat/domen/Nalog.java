@@ -4,7 +4,7 @@ package rs.ac.bg.fon.nprog.projekat.domen;
 import java.io.Serializable;
 
 /**
- * Klasa koja predstavlja klijenta radnje.
+ * Klasa koja predstavlja nalog zaposlenog.
  * 
  * @author Ignjat Rajak
  * @version 1.0

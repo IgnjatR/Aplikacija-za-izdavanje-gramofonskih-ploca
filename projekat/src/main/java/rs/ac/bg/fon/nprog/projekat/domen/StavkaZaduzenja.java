@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 /**
- * Klasa koja predstavlja klijenta radnje.
+ * Klasa koja predstavlja stavku zaduzenja klijenta.
  * 
  * @author Ignjat Rajak
  * @version 1.0

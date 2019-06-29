@@ -1,110 +1,212 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package rs.ac.bg.fon.nprog.projekat.domen;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 /**
+ * Klasa koja predstavlja zaposlenog u radnji.
+ * 
+ * @author Ignjat Rajak
+ * @version 1.0
  *
- * @author Ignjat
  */
-public class Zaposleni  {
-    
-    private int idZaposlenog;
-    private  String jmbg;
-    private String imeZaposlenog;
-    private String prezimeZaposlenog;
-    private String emailZ;
+public class Zaposleni {
 
-    public Zaposleni(int idZaposlenog, String jmbg, String imeZaposlenog, String prezimeZaposlenog, String emailZ) {
-        this.idZaposlenog = idZaposlenog;
-        this.jmbg = jmbg;
-        this.imeZaposlenog = imeZaposlenog;
-        this.prezimeZaposlenog = prezimeZaposlenog;
-        this.emailZ = emailZ;
-    }
+	/**
+	 * ID zaposlenog kao int.
+	 */
+	private int idZaposlenog;
 
-    public Zaposleni() {
+	/**
+	 * JMBG zaposlenog kao String.
+	 */
+	private String jmbg;
+
+	/**
+	 * Ime zaposlenog kao String.
+	 */
+	private String imeZaposlenog;
+
+	/**
+	 * Prezime zaposlenog kao String.
+	 */
+	private String prezimeZaposlenog;
+
+	/**
+	 * Email zaposlenog kao String.
+	 */
+	private String emailZ;
+
+	/**
+	 * Inicijalizuje zaposlenog i postavlja idZaposlenog, jmbg, imeZaposlenog,
+	 * prezimeZaposlenog, i emailZ na unete vrednosti.
+	 * 
+	 * @param idZaposlenog
+	 *            ID zaposlenog
+	 * @param jmbg
+	 *            JMBG zaposlenog
+	 * @param imeZaposlenog
+	 *            Ime zaposlenog
+	 * @param prezimeZaposlenog
+	 *            Prezime zaposlenog
+	 * @param emailZ
+	 *            Email zaposlenog
+	 * 
+	 */
+
+	public Zaposleni(int idZaposlenog, String jmbg, String imeZaposlenog, String prezimeZaposlenog, String emailZ) {
+		this.idZaposlenog = idZaposlenog;
+		this.jmbg = jmbg;
+		this.imeZaposlenog = imeZaposlenog;
+		this.prezimeZaposlenog = prezimeZaposlenog;
+		this.emailZ = emailZ;
 	}
 
+	/**
+	 * Inicijalizuje zaposlenog
+	 */
+	public Zaposleni() {
+	}
+
+	/**
+	 * Metoda koja vraca ID zaposlenog.
+	 * 
+	 * @return idZaposlenog kao int
+	 */
 	public int getIdZaposlenog() {
-        return idZaposlenog;
-    }
+		return idZaposlenog;
+	}
 
-    public void setIdZaposlenog(int idZaposlenog) {
-    	if(idZaposlenog<0)
-    		throw new RuntimeException();
-        this.idZaposlenog = idZaposlenog;
-    }
+	/**
+	 * Metoda postavlja novi ID zaposlenog.
+	 * 
+	 * @param idZaposlenog
+	 *            nova vrednost za idZaposlenog
+	 * @throws java.lang.RuntimeException
+	 *             ako je uneti ID manji od 0
+	 */
+	public void setIdZaposlenog(int idZaposlenog) {
+		if (idZaposlenog < 0)
+			throw new RuntimeException();
+		this.idZaposlenog = idZaposlenog;
+	}
 
-    public String getJmbg() {
-        return jmbg;
-    }
+	/**
+	 * Metoda koja vraca JMBG zaposlenog.
+	 * 
+	 * @return jmbg kao String
+	 */
+	public String getJmbg() {
+		return jmbg;
+	}
 
-    public void setJmbg(String jmbg) {
-        this.jmbg = jmbg;
-    }
+	/**
+	 * Metoda postavlja novi JMBG zaposlenog.
+	 * 
+	 * @param jmbg
+	 *            nova vrednost za jmbg
+	 * 
+	 */
+	public void setJmbg(String jmbg) {
+		this.jmbg = jmbg;
+	}
 
-    public String getImeZaposlenog() {
-        return imeZaposlenog;
-    }
+	/**
+	 * Metoda koja vraca ime zaposlenog.
+	 * 
+	 * @return imeZaposlenog kao String
+	 */
+	public String getImeZaposlenog() {
+		return imeZaposlenog;
+	}
 
-    public void setImeZaposlenog(String imeZaposlenog) {
-        this.imeZaposlenog = imeZaposlenog;
-    }
+	/**
+	 * Metoda postavlja novo ime zaposlenog.
+	 * 
+	 * @param imeZaposlenog
+	 *            nova vrednost za imeZaposlenog
+	 * 
+	 */
+	public void setImeZaposlenog(String imeZaposlenog) {
+		this.imeZaposlenog = imeZaposlenog;
+	}
 
-    public String getPrezimeZaposlenog() {
-        return prezimeZaposlenog;
-    }
+	/**
+	 * Metoda koja vraca prezime zaposlenog.
+	 * 
+	 * @return prezimeZaposlenog kao String
+	 */
+	public String getPrezimeZaposlenog() {
+		return prezimeZaposlenog;
+	}
 
-    public void setPrezimeZaposlenog(String prezimeZaposlenog) {
-        this.prezimeZaposlenog = prezimeZaposlenog;
-    }
+	/**
+	 * Metoda postavlja novo prezime zaposlenog.
+	 * 
+	 * @param prezimeZaposlenog
+	 *            nova vrednost za prezimeZaposlenog
+	 * 
+	 */
+	public void setPrezimeZaposlenog(String prezimeZaposlenog) {
+		this.prezimeZaposlenog = prezimeZaposlenog;
+	}
 
-    public String getEmailZ() {
-        return emailZ;
-    }
+	/**
+	 * Metoda koja vraca email zaposlenog.
+	 * 
+	 * @return emailZ kao String
+	 */
+	public String getEmailZ() {
+		return emailZ;
+	}
 
-    public void setEmailZ(String emailZ) {
-        this.emailZ = emailZ;
-    }
+	/**
+	 * Metoda postavlja novi email zaposlenog.
+	 * 
+	 * @param emailZ
+	 *            nova vrednost za emailZ
+	 * 
+	 */
+	public void setEmailZ(String emailZ) {
+		this.emailZ = emailZ;
+	}
 
-    @Override
-    public String toString() {
-        return imeZaposlenog + " " + prezimeZaposlenog;
-    }
+	@Override
+	public String toString() {
+		return imeZaposlenog + " " + prezimeZaposlenog;
+	}
 
-    @Override
-    public int hashCode() {
-        int hash = 5;
-        return hash;
-    }
+	@Override
+	public int hashCode() {
+		int hash = 5;
+		return hash;
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Zaposleni other = (Zaposleni) obj;
-        if (!Objects.equals(this.idZaposlenog, other.idZaposlenog)) {
-            return false;
-        }
-        if (!Objects.equals(this.jmbg, other.jmbg)) {
-            return false;
-        }
-        return true;
-    }
-    
-    
-    
+	/**
+	 * Poredi dva Zaposlena po njihovom ID (idKlijenta) i JMBG (jmbg).
+	 * 
+	 * @return true ako su oba idKlijenta ista i ako su oba jmbg ista, false ako
+	 *         to nije slucaj.
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		final Zaposleni other = (Zaposleni) obj;
+		if (!Objects.equals(this.idZaposlenog, other.idZaposlenog)) {
+			return false;
+		}
+		if (!Objects.equals(this.jmbg, other.jmbg)) {
+			return false;
+		}
+		return true;
+	}
+
 }

@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * Klasa koja predstavlja klijenta radnje.
+ * Klasa koja predstavlja gramofonsku plocu.
  * 
  * @author Ignjat Rajak
  * @version 1.0
