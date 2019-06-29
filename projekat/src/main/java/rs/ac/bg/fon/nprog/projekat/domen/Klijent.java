@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package rs.ac.bg.fon.nprog.projekat.domen;
 
 import java.io.Serializable;
@@ -22,35 +18,49 @@ public class Klijent {
 	 * ID klijenta kao int.
 	 */
 	private int idKlijenta;
-	
+
 	/**
 	 * Ime klijenta kao String.
 	 */
 	private String ime;
-	
+
 	/**
 	 * Prezime klijenta kao String.
 	 */
 	private String prezime;
-	
+
 	/**
 	 * Telefon klijenta kao String.
 	 */
 	private String telefon;
-	
+
 	/**
 	 * Adresa kao String.
 	 */
 	private String adresa;
-	
+
 	/**
 	 * Email klijenta kao String.
 	 */
 	private String email;
-	
 
-	
-
+	/**
+	 * Inicijalizuje klijenta i postavlja idKlijenta, ime, prezime, telefon,
+	 * adresa i email na unete vrednosti pozivanjem set metoda.
+	 * 
+	 * @param idKlijenta
+	 *            ID klijenta
+	 * @param ime
+	 *            ime klijenta
+	 * @param prezime
+	 *            prezime klijenta
+	 * @param telefon
+	 *            telefon klijenta
+	 * @param adresa
+	 *            adresa klijenta
+	 * @param email
+	 *            email klijenta
+	 */
 	public Klijent(int idKlijenta, String ime, String prezime, String telefon, String adresa, String email) {
 		this.idKlijenta = idKlijenta;
 		this.ime = ime;
@@ -60,65 +70,141 @@ public class Klijent {
 		this.email = email;
 	}
 
+	/**
+	 * Inicijalizuje klijenta
+	 */
 	public Klijent() {
 	}
 
+	/**
+	 * Metoda koja vraca email klijenta.
+	 * 
+	 * @return email kao String
+	 */
 	public String getEmail() {
 		return email;
 	}
 
+	/**
+	 * Metoda postavlja novi email klijenta .
+	 * 
+	 * @param email
+	 *            nova vrednost za email
+	 * 
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
+	/**
+	 * Metoda koja vraca ID klijenta.
+	 * 
+	 * @return idKlijenta kao int
+	 */
 	public int getIdKlijenta() {
 		return idKlijenta;
 	}
 
-	public void setIdKlijenta(int idKlijenta) throws RuntimeException{
-		if(idKlijenta<0)
-    		throw new RuntimeException("ID klijenta mora biti veci od 0");
+	/**
+	 * Metoda postavlja novi ID klijenta.
+	 * 
+	 * @param idKlijenta
+	 *            nova vrednost za idKlijenta
+	 * @throws java.lang.RuntimeException
+	 *             ako je uneti ID manji od 0
+	 */
+	public void setIdKlijenta(int idKlijenta) {
+		if (idKlijenta < 0)
+			throw new RuntimeException("ID klijenta mora biti veci od 0");
 		this.idKlijenta = idKlijenta;
 	}
 
+	/**
+	 * Metoda koja vraca ime klijenta.
+	 * 
+	 * @return ime kao String
+	 */
 	public String getIme() {
 		return ime;
 	}
 
+	/**
+	 * Metoda postavlja novo ime klijenta .
+	 * 
+	 * @param ime
+	 *            nova vrednost za ime
+	 * 
+	 */
 	public void setIme(String ime) {
 		this.ime = ime;
 	}
+
+	/**
+	 * Metoda koja vraca prezime klijenta.
+	 * 
+	 * @return prezime kao String
+	 */
 
 	public String getPrezime() {
 		return prezime;
 	}
 
+	/**
+	 * Metoda postavlja novo prezime klijenta .
+	 * 
+	 * @param prezime
+	 *            nova vrednost za prezime
+	 * 
+	 */
 	public void setPrezime(String prezime) {
 		this.prezime = prezime;
 	}
 
+	/**
+	 * Metoda koja vraca telefon klijenta.
+	 * 
+	 * @return telefon kao String
+	 */
 	public String getTelefon() {
 		return telefon;
 	}
 
+	/**
+	 * Metoda postavlja novi telefon klijenta .
+	 * 
+	 * @param telefon
+	 *            nova vrednost za telefon
+	 * 
+	 */
 	public void setTelefon(String telefon) {
 		this.telefon = telefon;
 	}
 
+	/**
+	 * Metoda koja vraca adresu klijenta.
+	 * 
+	 * @return adresa kao String
+	 */
 	public String getAdresa() {
 		return adresa;
 	}
 
+	/**
+	 * Metoda postavlja novu adresu klijenta .
+	 * 
+	 * @param adresa
+	 *            nova vrednost za adresa
+	 * 
+	 */
 	public void setAdresa(String adresa) {
 		this.adresa = adresa;
 	}
 
-	@Override
-	public int hashCode() {
-		int hash = 7;
-		return hash;
-	}
-
+	/**
+	 * Poredi dva Klijenta po njihovom ID (idKlijenta).
+	 * 
+	 * @return true ako su oba idKlijenta ista, false ako to nije slucaj.
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) {
