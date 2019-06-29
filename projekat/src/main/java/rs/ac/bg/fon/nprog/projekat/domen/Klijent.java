@@ -46,7 +46,7 @@ public class Klijent {
 
 	/**
 	 * Inicijalizuje klijenta i postavlja idKlijenta, ime, prezime, telefon,
-	 * adresa i email na unete vrednosti pozivanjem set metoda.
+	 * adresa i email na unete vrednosti.
 	 * 
 	 * @param idKlijenta
 	 *            ID klijenta

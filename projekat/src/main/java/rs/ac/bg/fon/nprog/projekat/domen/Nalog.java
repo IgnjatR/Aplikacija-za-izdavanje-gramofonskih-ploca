@@ -34,7 +34,7 @@ public class Nalog {
 
 	/**
 	 * Inicijalizuje nalog i postavlja sifraNaloga, password i username na unete
-	 * vrednosti pozivanjem set metoda.
+	 * vrednosti.
 	 * 
 	 * @param idKlijenta
 	 *            ID klijenta
@@ -118,6 +118,11 @@ public class Nalog {
 		return "Nalog{" + "username=" + username + '}';
 	}
 
+	/**
+	 * Poredi dva Naloga po njihovoj sifri (sifraNaloga).
+	 * 
+	 * @return true ako su obe sifraNaloga ista, false ako to nije slucaj.
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) {
