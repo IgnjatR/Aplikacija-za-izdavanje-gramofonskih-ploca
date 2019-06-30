@@ -89,7 +89,7 @@ public class Klijent {
 	 * Metoda postavlja novi email klijenta .
 	 * 
 	 * @param email
-	 *            nova vrednost za email
+	 *            nova vrednost za email 
 	 * 
 	 */
 	public void setEmail(String email) {
@@ -109,7 +109,7 @@ public class Klijent {
 	 * Metoda postavlja novi ID klijenta.
 	 * 
 	 * @param idKlijenta
-	 *            nova vrednost za idKlijenta
+	 *            nova vrednost za ID klijenta
 	 * @throws java.lang.RuntimeException
 	 *             ako je uneti ID manji od 0
 	 */
@@ -132,7 +132,7 @@ public class Klijent {
 	 * Metoda postavlja novo ime klijenta .
 	 * 
 	 * @param ime
-	 *            nova vrednost za ime
+	 *            nova vrednost za ime klijenta
 	 * 
 	 */
 	public void setIme(String ime) {
@@ -153,7 +153,7 @@ public class Klijent {
 	 * Metoda postavlja novo prezime klijenta .
 	 * 
 	 * @param prezime
-	 *            nova vrednost za prezime
+	 *            nova vrednost za prezime klijenta
 	 * 
 	 */
 	public void setPrezime(String prezime) {
@@ -173,7 +173,7 @@ public class Klijent {
 	 * Metoda postavlja novi telefon klijenta .
 	 * 
 	 * @param telefon
-	 *            nova vrednost za telefon
+	 *            nova vrednost za telefon klijenta
 	 * 
 	 */
 	public void setTelefon(String telefon) {
@@ -193,7 +193,7 @@ public class Klijent {
 	 * Metoda postavlja novu adresu klijenta .
 	 * 
 	 * @param adresa
-	 *            nova vrednost za adresa
+	 *            nova vrednost za adresu klijenta
 	 * 
 	 */
 	public void setAdresa(String adresa) {

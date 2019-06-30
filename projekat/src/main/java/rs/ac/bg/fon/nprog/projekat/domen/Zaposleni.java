@@ -81,7 +81,7 @@ public class Zaposleni {
 	 * Metoda postavlja novi ID zaposlenog.
 	 * 
 	 * @param idZaposlenog
-	 *            nova vrednost za idZaposlenog
+	 *            nova vrednost za ID zaposlenog
 	 * @throws java.lang.RuntimeException
 	 *             ako je uneti ID manji od 0
 	 */
@@ -104,7 +104,7 @@ public class Zaposleni {
 	 * Metoda postavlja novi JMBG zaposlenog.
 	 * 
 	 * @param jmbg
-	 *            nova vrednost za jmbg
+	 *            nova vrednost za JMBG zaposlenog
 	 * 
 	 */
 	public void setJmbg(String jmbg) {
@@ -124,7 +124,7 @@ public class Zaposleni {
 	 * Metoda postavlja novo ime zaposlenog.
 	 * 
 	 * @param imeZaposlenog
-	 *            nova vrednost za imeZaposlenog
+	 *            nova vrednost za ime zaposlenog
 	 * 
 	 */
 	public void setImeZaposlenog(String imeZaposlenog) {
@@ -144,7 +144,7 @@ public class Zaposleni {
 	 * Metoda postavlja novo prezime zaposlenog.
 	 * 
 	 * @param prezimeZaposlenog
-	 *            nova vrednost za prezimeZaposlenog
+	 *            nova vrednost za prezime zaposlenog
 	 * 
 	 */
 	public void setPrezimeZaposlenog(String prezimeZaposlenog) {
@@ -164,7 +164,7 @@ public class Zaposleni {
 	 * Metoda postavlja novi email zaposlenog.
 	 * 
 	 * @param emailZ
-	 *            nova vrednost za emailZ
+	 *            nova vrednost za email zaposlenog
 	 * 
 	 */
 	public void setEmailZ(String emailZ) {

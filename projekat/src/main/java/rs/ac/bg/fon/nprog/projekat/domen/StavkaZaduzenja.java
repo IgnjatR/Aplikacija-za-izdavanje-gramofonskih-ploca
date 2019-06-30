@@ -98,7 +98,7 @@ public class StavkaZaduzenja {
 	 * Metoda postavlja novu plocu koja se zaduzuje.
 	 * 
 	 * @param ploca
-	 *            nova vrednost za ploca
+	 *            nova vrednost za plocu
 	 * 
 	 */
 	public void setPloca(Ploca ploca) {
@@ -138,7 +138,7 @@ public class StavkaZaduzenja {
 	 * Metoda postavlja novog zaposlenog koji je kreirao zaduzenje.
 	 * 
 	 * @param zaposleni
-	 *            nova vrednost za zaposleni
+	 *            nova vrednost za zaposlenog
 	 * 
 	 */
 	public void setZaposleni(Zaposleni zaposleni) {
@@ -158,7 +158,7 @@ public class StavkaZaduzenja {
 	 * Metoda postavlja novog klijenta koji se zaduzuje.
 	 * 
 	 * @param klijent
-	 *            nova vrednost za klijent
+	 *            nova vrednost za klijenta
 	 * 
 	 */
 	public void setKlijent(Klijent klijent) {
@@ -178,7 +178,7 @@ public class StavkaZaduzenja {
 	 * Metoda postavlja novi redni broj ploce.
 	 * 
 	 * @param redniBroj
-	 *            nova vrednost za redniBroj
+	 *            nova vrednost za redni broj ploce
 	 * @throws java.lang.RuntimeException
 	 *             ako je uneti redniBroj manji od 0
 	 */
@@ -201,7 +201,7 @@ public class StavkaZaduzenja {
 	 * Metoda postavlja novu kolicinu narudzbe.
 	 * 
 	 * @param kolicina
-	 *            nova vrednost za kolicina
+	 *            nova vrednost za kolicinu narudzbe
 	 * 
 	 */
 	public void setKolicina(int kolicina) {
@@ -221,7 +221,7 @@ public class StavkaZaduzenja {
 	 * Metoda postavlja novu vrednost narudzbe.
 	 * 
 	 * @param vrednost
-	 *            nova vrednost za vrednost
+	 *            nova vrednost za vrednost narudzbe
 	 * 
 	 */
 	public void setVrednost(BigDecimal vrednost) {

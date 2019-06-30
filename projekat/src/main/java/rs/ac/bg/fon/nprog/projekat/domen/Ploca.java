@@ -90,7 +90,7 @@ public class Ploca {
 	 * Metoda postavlja novu cenu izdavanja ploce.
 	 * 
 	 * @param cenaIzdavanja
-	 *            nova vrednost za cenaIzdavanja
+	 *            nova vrednost za cenu izdavanja ploce
 	 * 
 	 */
 	public void setCenaIzdavanja(BigDecimal cenaIzdavanja) {
@@ -110,7 +110,7 @@ public class Ploca {
 	 * Metoda postavlja novi ID ploce.
 	 * 
 	 * @param idPloce
-	 *            nova vrednost za idPloce
+	 *            nova vrednost za ID ploce
 	 * @throws java.lang.RuntimeException
 	 *             ako je uneti ID manji od 0
 	 */
@@ -133,7 +133,7 @@ public class Ploca {
 	 * Metoda postavlja novog autora ploce.
 	 * 
 	 * @param autor
-	 *            nova vrednost za autor
+	 *            nova vrednost za autora ploce
 	 * 
 	 */
 	public void setAutor(String autor) {
@@ -153,7 +153,7 @@ public class Ploca {
 	 * Metoda postavlja novi datum izdavanja ploce.
 	 * 
 	 * @param datumIzdavanja
-	 *            nova vrednost za datumIzdavanja
+	 *            nova vrednost za datum izdavanja ploce
 	 * 
 	 */
 	public void setDatumIzdavanja(Date datumIzdavanja) {
@@ -173,7 +173,7 @@ public class Ploca {
 	 * Metoda postavlja novi broj pesama na ploci.
 	 * 
 	 * @param brojPesama
-	 *            nova vrednost za brojPesama
+	 *            nova vrednost za broj pesama na ploci
 	 * 
 	 */
 	public void setBrojPesama(int brojPesama) {
@@ -227,7 +227,7 @@ public class Ploca {
 	 * Metoda postavlja novi naziv ploce.
 	 * 
 	 * @param naziv
-	 *            nova vrednost za naziv
+	 *            nova vrednost za naziv ploce
 	 * 
 	 */
 	public void setNaziv(String naziv) {

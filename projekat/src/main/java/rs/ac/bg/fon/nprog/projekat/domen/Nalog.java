@@ -63,7 +63,7 @@ public class Nalog {
 	 * Metoda postavlja novi username naloga.
 	 * 
 	 * @param username
-	 *            nova vrednost za username
+	 *            nova vrednost za username naloga
 	 * 
 	 */
 	public void setUsername(String username) {
@@ -83,7 +83,7 @@ public class Nalog {
 	 * Metoda postavlja novu sifru naloga.
 	 * 
 	 * @param sifraNaloga
-	 *            nova vrednost za sifraNaloga
+	 *            nova vrednost za sifru naloga
 	 * @throws java.lang.RuntimeException
 	 *             ako je uneta sifraNaloga manja od 0
 	 */
@@ -106,7 +106,7 @@ public class Nalog {
 	 * Metoda postavlja novi password naloga.
 	 * 
 	 * @param password
-	 *            nova vrednost za password
+	 *            nova vrednost za password naloga
 	 * 
 	 */
 	public void setPassword(String password) {
@@ -154,7 +154,7 @@ public class Nalog {
 	 * Metoda postavlja novog zaposlenog koji je povezan sa nalogom.
 	 * 
 	 * @param zaposleni
-	 *            nova vrednost za zaposleni
+	 *            nova vrednost za zaposlenog 
 	 * 
 	 */
 	public void setZaposleni(Zaposleni zaposleni) {

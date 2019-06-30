@@ -82,7 +82,7 @@ public class Zaduzenje {
 	 * Metoda postavlja novog klijenta koji se zaduzuje.
 	 * 
 	 * @param klijent
-	 *            nova vrednost za klijent
+	 *            nova vrednost za klijenta
 	 * 
 	 */
 	public void setKlijent(Klijent klijent) {
@@ -102,7 +102,7 @@ public class Zaduzenje {
 	 * Metoda postavlja novu sifru zaduzenja.
 	 * 
 	 * @param sifraZaduzenja
-	 *            nova vrednost za sifraZaduzenja
+	 *            nova vrednost za sifru zaduzenja
 	 * @throws java.lang.RuntimeException
 	 *             ako je uneta sifraZaduzenja manja od 0
 	 */
@@ -125,7 +125,7 @@ public class Zaduzenje {
 	 * Metoda postavlja novi datum kreiranja zaduzenja.
 	 * 
 	 * @param datum
-	 *            nova vrednost za datum
+	 *            nova vrednost za datum kreiranja zaduzenja
 	 * 
 	 */
 	public void setDatum(Date datum) {
@@ -145,7 +145,7 @@ public class Zaduzenje {
 	 * Metoda postavlja novu ukupnu vrednost zaduzenja.
 	 * 
 	 * @param ukupno
-	 *            nova vrednost za ukupno
+	 *            nova vrednost za ukupnu vrednost zaduzenja
 	 * 
 	 */
 	public void setUkupno(BigDecimal ukupno) {
@@ -165,7 +165,7 @@ public class Zaduzenje {
 	 * Metoda postavlja novog zaposlenog koji je kreirao zaduzenje.
 	 * 
 	 * @param zaposleni
-	 *            nova vrednost za zaposleni
+	 *            nova vrednost za zaposlenog
 	 * 
 	 */
 	public void setZaposleni(Zaposleni zaposleni) {
